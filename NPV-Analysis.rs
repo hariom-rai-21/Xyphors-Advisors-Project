@@ -5,7 +5,7 @@ fn calculate_npv(cash_flows: &[f64], discount_rate: f64, initial_investment: f64
         let present_value = cash_flow / (1.0 + discount_rate).powi(t as i32);
         npv += present_value;
     }
-
+// codebase value = 326 (test phase 2) will be integrated soon
     npv
 }
 
